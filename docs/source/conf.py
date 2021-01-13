@@ -22,7 +22,7 @@ copyright = '2021, Info Alchemy'
 author = 'Info Alchemy'
 
 # The full version, including alpha/beta/rc tags
-release = 'v0.1'
+release = '0.0.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -30,7 +30,8 @@ release = 'v0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark']
+extensions = [
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -46,7 +47,7 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'blue'
+html_theme = 'alabaster'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
