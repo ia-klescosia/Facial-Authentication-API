@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submit ID &#8212; IA Facial Authentication API 0.0.1 documentation</title>
+    <title>Selfie Match &#8212; IA Facial Authentication API 0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -13,8 +13,7 @@
     <script src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Selfie Match" href="selfiematch.html" />
-    <link rel="prev" title="Info Alchemy Facial Authentication API" href="index.html" />
+    <link rel="prev" title="Submit ID" href="submitid.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -53,15 +52,15 @@
   <ul class="dropdown-menu globaltoc"
       role="menu"
       aria-labelledby="dLabelGlobalToc"><ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Submit ID</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-send-requests-via-rest-api">How to send requests via REST API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#common-error-gateway-response-types">Common error gateway response types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="submitid.html">Submit ID</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="submitid.html#how-to-send-requests-via-rest-api">How to send requests via REST API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="submitid.html#common-error-gateway-response-types">Common error gateway response types</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="selfiematch.html">Selfie Match</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="selfiematch.html#how-it-works">How it works</a></li>
-<li class="toctree-l2"><a class="reference internal" href="selfiematch.html#how-to-send-requests-via-rest-api">How to send requests via REST API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="selfiematch.html#common-error-gateway-response-types">Common error gateway response types</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Selfie Match</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-it-works">How it works</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-send-requests-via-rest-api">How to send requests via REST API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#common-error-gateway-response-types">Common error gateway response types</a></li>
 </ul>
 </li>
 </ul>
@@ -73,11 +72,7 @@
               
                 
   <li>
-    <a href="index.html" title="Previous Chapter: Info Alchemy Facial Authentication API"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Info Alchemy ...</span>
-    </a>
-  </li>
-  <li>
-    <a href="selfiematch.html" title="Next Chapter: Selfie Match"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Selfie Match &raquo;</span>
+    <a href="submitid.html" title="Previous Chapter: Submit ID"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Submit ID</span>
     </a>
   </li>
               
@@ -87,7 +82,7 @@
             
               <li class="hidden-sm">
 <div id="sourcelink">
-  <a href="_sources/submitid.rst.txt"
+  <a href="_sources/selfiematch.rst.txt"
      rel="nofollow">Source</a>
 </div></li>
             
@@ -111,18 +106,12 @@
   <div class="row">
     <div class="body col-md-12 content" role="main">
       
-  <div class="section" id="submit-id">
-<h1>Submit ID<a class="headerlink" href="#submit-id" title="Permalink to this headline">¶</a></h1>
-<p>This section discusses the Submit ID API where a user uploads their Government-issued ID and then the API returns the details as well as the image present in the ID.</p>
-<p>As of this writing, the support Philippine IDs are:</p>
-<ul class="simple">
-<li><p>Philippine Passport (New - Issued 2018) <a class="footnote-reference brackets" href="#f1" id="id1">1</a></p></li>
-<li><p>Driver’s License</p></li>
-<li><p>TIN ID</p></li>
-<li><p>Unified Multi-Purpose ID (UMID)</p></li>
-<li><p>Postal ID</p></li>
-</ul>
-<div class="toctree-wrapper compound">
+  <div class="section" id="selfie-match">
+<h1>Selfie Match<a class="headerlink" href="#selfie-match" title="Permalink to this headline">¶</a></h1>
+<p>This section discusses the Selfie Match API where the application takes in a Selfie image of the person and then matching it with the Government ID that was provided in the Submit ID API.</p>
+<div class="section" id="how-it-works">
+<h2>How it works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h2>
+<p>The application captures an image and encodes it to a <code class="docutils literal notranslate"><span class="pre">Base64</span> <span class="pre">encoded</span></code> string, then calls the <code class="docutils literal notranslate"><span class="pre">selfie</span> <span class="pre">match</span></code> API which is powered by a Amazon’s Facial-Recognition AI, it then validates image to the Government Issued ID.</p>
 </div>
 <div class="section" id="how-to-send-requests-via-rest-api">
 <h2>How to send requests via REST API<a class="headerlink" href="#how-to-send-requests-via-rest-api" title="Permalink to this headline">¶</a></h2>
@@ -137,6 +126,7 @@
 <dl class="simple">
 <dt><strong>Parameters:</strong></dt><dd><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">uuid</span></code> (required) is a unique ID per user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">threshold</span></code> (optional) is the confidence level for the matched image</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">image</span></code> (required) is a Base64 encoded image string</p></li>
 </ul>
 </dd>
@@ -144,6 +134,7 @@
 <p><strong>Sample Request</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
         <span class="s2">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;123ABAB&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;threshold: &quot;</span><span class="mi">80</span><span class="s2">&quot;,</span>
         <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;SGVsbG8sIHRoaXMgaXMgYSBzYW1wbGUgQmFzZTY0IEVuY29kZWQgc3RyaW5nLiBTZW5kaW5nIGxvdmUgZnJvbSB0aGUgSW5mbyBBbGNoZW15IFRlYW0u&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -155,23 +146,13 @@
         <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span>
     <span class="p">},</span>
     <span class="s2">&quot;body&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">&quot;uuid&quot;</span><span class="p">:</span> <span class="s2">&quot;123ABAB&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;id_type&quot;</span><span class="p">:</span> <span class="s2">&quot;postal identity card&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;full_name&quot;</span><span class="p">:</span> <span class="s2">&quot;JUANA REYES DELA CRUZ&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;issued_by&quot;</span><span class="p">:</span> <span class="s2">&quot;MNL . QE&quot;</span>
+        <span class="s2">&quot;Match&quot;</span><span class="p">:</span> <span class="s2">&quot;Yes&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;Similarity Rating&quot;</span><span class="p">:</span> <span class="mf">100.0</span><span class="p">,</span>
+                <span class="s2">&quot;Collection ID&quot;</span><span class="p">:</span> <span class="s2">&quot;123ABAB&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><strong>Note:</strong></p>
-<p>The Submit ID API, in most cases, will detect the text in the image and will search all the fields and will load them into their respective fields.
-In case some of the fields in the API’s response is missing, here are some troubleshooting steps that you can take:</p>
-<ul class="simple">
-<li><p>The Submit ID API relies on the quality of the image provided, as such, the captured image should not contain any glare, reflection or shadows</p></li>
-<li><p>Crop the image to the ID’s size to make it more reliable</p></li>
-<li><p>The users may also lower the camera resolution by changing their phone’s camera settings</p></li>
-<li><p>If all else fails, kindly notify the developers to troubleshoot and debug (please indicate the problems encountered, thank you!)</p></li>
-</ul>
 </div>
 <div class="section" id="common-error-gateway-response-types">
 <h2>Common error gateway response types<a class="headerlink" href="#common-error-gateway-response-types" title="Permalink to this headline">¶</a></h2>
@@ -217,12 +198,6 @@ In case some of the fields in the API’s response is missing, here are some tro
 </tr>
 </tbody>
 </table>
-<p class="rubric">Footnotes</p>
-<dl class="footnote brackets">
-<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Text of the first footnote.</p>
-</dd>
-</dl>
 </div>
 </div>
 
