@@ -3,18 +3,30 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Info Alchemy Facial Authentication API's documentation!
+Info Alchemy Facial Authentication API
 ==================================================================
+
+This documentation is for the Facial Authentication created by Info Alchemy.
+
+The API features a suite of AI Services such as Extraction of Details in a government ID, Selfie Photo matching, and Liveness Detection powered by Amazon Web Services (AWS).
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+API Reference
+-----------------
 
+This section demonstrates the required input for the API as well as its outputs.
+
+.. toctree::
+	:maxdepth: 2
+
+	submitid
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
+
