@@ -4,7 +4,7 @@ Submit ID
 This section discusses the Submit ID API where a user uploads their Government-issued ID and then the API returns the details as well as the image present in the ID.
 
 
-As of this writing, the support Philippine IDs are:
+As of this writing, the supported Philippine IDs are:
 
 * Philippine Passport (New - Issued 2018) [#f1]_
 * Driver's License
