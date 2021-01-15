@@ -35,26 +35,30 @@ The API link will be provided by the team, below is a sample **POST** method
  * ``uuid`` (required) is a unique ID per user
  * ``image`` (required) is a Base64 encoded image string
 
-**Sample Request**::
+**Sample Request** 
+
+.. code-block:: JSON
 
 	{
 		"uuid": "123ABAB",
 		"image": "SGVsbG8sIHRoaXMgaXMgYSBzYW1wbGUgQmFzZTY0IEVuY29kZWQgc3RyaW5nLiBTZW5kaW5nIGxvdmUgZnJvbSB0aGUgSW5mbyBBbGNoZW15IFRlYW0u"
 	}
 
-**Sample Response**::
+**Sample Response**
 
+.. code-block:: JSON
+	
 	{
-	    "statusCode": 200,
-	    "headers": {
-	        "Content-Type": "application/json"
-	    },
-	    "body": {
-	        "uuid": "123ABAB",
-	        "id_type": "postal identity card",
-	        "full_name": "JUANA REYES DELA CRUZ",
-	        "issued_by": "MNL . QE"
-	    }
+		"statusCode": 200,
+		"headers": {
+			"Content-Type": "application/json"
+		},
+		"body": {
+			"uuid": "123ABAB",
+			"id_type": "postal identity card",
+			"full_name": "JUANA REYES DELA CRUZ",
+			"issued_by": "MNL . QE"
+		}
 	}
 
 **Note:** 

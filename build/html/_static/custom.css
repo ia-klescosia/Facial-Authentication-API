@@ -1,4 +1,7 @@
 /* This file intentionally left blank. */
 .footer{
 	position: fixed;
+},
+pre {
+    white-space: pre-wrap;
 }

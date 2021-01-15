@@ -19,7 +19,6 @@ This section demonstrates the required input for the API as well as its outputs.
 .. toctree::
    submitid.rst
    selfiematch.rst
-   livenessdetection.rst
 
 Indices and tables
 ==================

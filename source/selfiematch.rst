@@ -27,26 +27,30 @@ The API link will be provided by the team, below is a sample **POST** method
  * ``threshold`` (optional) is the confidence level for the matched image
  * ``image`` (required) is a Base64 encoded image string
 
-**Sample Request**::
+**Sample Request**
 
+.. code-block:: JSON
+	
 	{
 		"uuid": "123ABAB",
 		"threshold: "80",
 		"image": "SGVsbG8sIHRoaXMgaXMgYSBzYW1wbGUgQmFzZTY0IEVuY29kZWQgc3RyaW5nLiBTZW5kaW5nIGxvdmUgZnJvbSB0aGUgSW5mbyBBbGNoZW15IFRlYW0u"
 	}
 
-**Sample Response**::
+**Sample Response**
+
+.. code-block:: JSON
 
 	{
-	    "statusCode": 200,
-	    "headers": {
-	        "Content-Type": "application/json"
-	    },
-	    "body": {
-	        "Match": "Yes",
+		"statusCode": 200,
+		"headers": {
+			"Content-Type": "application/json"
+		},
+		"body": {
+			"Match": "Yes",
 			"Similarity Rating": 100.0,
 			"Collection ID": "123ABAB"
-	    }
+		}
 	}
 
 Common error gateway response types
