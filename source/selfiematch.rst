@@ -33,7 +33,7 @@ The API link will be provided by the team, below is a sample **POST** method
 	
 	{
 		"uuid": "123ABAB",
-		"threshold: "80",
+		"threshold": "80",
 		"image": "SGVsbG8sIHRoaXMgaXMgYSBzYW1wbGUgQmFzZTY0IEVuY29kZWQgc3RyaW5nLiBTZW5kaW5nIGxvdmUgZnJvbSB0aGUgSW5mbyBBbGNoZW15IFRlYW0u"
 	}
 
