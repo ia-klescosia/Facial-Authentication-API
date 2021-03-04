@@ -58,7 +58,7 @@ The API link will be provided by the team, below is a sample **POST** method
 How to send GET requests via REST API
 --------------------------------------
 
-API: https://6sdo4wx835.execute-api.ap-southeast-1.amazonaws.com/dev/getdetails
+API: https://6sdo4wx835.execute-api.ap-southeast-1.amazonaws.com/dev/getselfie
 
 The API allows sending `GET` requests in an event that there is a failed network connectivity in the client side.
 

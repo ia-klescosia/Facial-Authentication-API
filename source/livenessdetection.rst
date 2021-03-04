@@ -111,7 +111,7 @@ For the API to flag **"Liveness Detection"** as **"Success"**, the tip of the no
 How to send GET requests via REST API
 --------------------------------------
 
-API: https://6sdo4wx835.execute-api.ap-southeast-1.amazonaws.com/dev/getdetails
+API: https://6sdo4wx835.execute-api.ap-southeast-1.amazonaws.com/dev/getliveness
 
 The API allows sending `GET` requests in an event that there is a failed network connectivity in the client side.
 
@@ -166,7 +166,7 @@ This will allow the application to bypass the process of having to `POST` data a
 	        }
 	    }
 	}
-	
+
 **Note:** 
 
 The `GET` API allows only a maximum of **5 retries**. If this limit is reached, an error response would be returned instead.
