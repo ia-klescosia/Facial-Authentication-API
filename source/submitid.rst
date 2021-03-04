@@ -98,7 +98,7 @@ This will allow the application to bypass the process of having to `POST` data a
 .. code-block:: JSON
 
 	{
-		"uuid": "444XYZ"
+		"uuid": "123ABAB"
 	}
 
 **Sample Response**
@@ -110,15 +110,11 @@ This will allow the application to bypass the process of having to `POST` data a
     "headers": {
         "Content-Type": "application/json"
     },
-    "body": {
-        "uuid": "444XYZ",
-        "id_type": "",
-        "details": [
-            "ateneo de manila",
-            "university",
-            "high school"
-        ]
-		}
+	"body": {
+		"uuid": "123ABAB",
+		"id_type": "postal identity card",
+		"full_name": "JUANA REYES DELA CRUZ",
+		"issued_by": "MNL . QE"
 	}
 
 **Note:** 
