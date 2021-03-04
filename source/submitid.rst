@@ -73,16 +73,6 @@ In case some of the fields in the API's response is missing, here are some troub
 * The users may also lower the camera resolution by changing their phone's camera settings
 * If all else fails, kindly notify the developers to troubleshoot and debug (please indicate the problems encountered, thank you!)
 
-Common error gateway response types
------------------------------------
-
-The table below lists the common error gateway that you may encounter. If the error isn't present in the table below, kindly contact the developer.
-
-.. csv-table::
-   :file: ./_static/gateway_responses_table.csv
-   :widths: 500, 500, 600
-
-
 
 How to send GET requests via REST API
 --------------------------------------
@@ -131,6 +121,16 @@ The `GET` API allows only a maximum of **5 retries**. If this limit is reached, 
 		"body": "Number of maximum tries has been reached. Please try again later. Or contact the developer"
 	}
 
+
+
+Common error gateway response types
+-----------------------------------
+
+The table below lists the common error gateway that you may encounter. If the error isn't present in the table below, kindly contact the developer.
+
+.. csv-table::
+   :file: ./_static/gateway_responses_table.csv
+   :widths: 500, 500, 600
 
 
 .. rubric:: Footnotes

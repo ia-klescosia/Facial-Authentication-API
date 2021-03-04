@@ -108,6 +108,79 @@ For the API to flag **"Match"** as **"Yes"**, the Similarity Rating must be grea
 For the API to flag **"Liveness Detection"** as **"Success"**, the tip of the nose of the user must appear inside the specified bounding box for atleast **4 timestamps** or **2 seconds**. Kindly contact the developers if tweaking is needed for this specific criteria. 
 
 
+How to send GET requests via REST API
+--------------------------------------
+
+API: https://6sdo4wx835.execute-api.ap-southeast-1.amazonaws.com/dev/getdetails
+
+The API allows sending `GET` requests in an event that there is a failed network connectivity in the client side.
+
+This will allow the application to bypass the process of having to `POST` data all over again which will result in having a higher cost.
+
+**Sample Request** 
+
+.. code-block:: JSON
+
+	{
+		"uuid": "123ABAB"
+	}
+
+**Sample Response**::
+
+	{
+   		"statusCode": 200,
+	    "headers": {
+	        "Content-Type": "application/json"
+	    },
+	    "body": {
+	        "Match": "Yes",
+	        "Similarity Rating": 99.99989318847656,
+	        "LivenessDetection": "Success",
+	        "Timestamps": [
+	            0,
+	            482,
+	            999,
+	            1482,
+	            1999,
+	            2482
+	        ],
+	        "X_Nose": [
+			362.2641706466675,
+			362.5665092468262,
+			364.0458869934082,
+			365.17001152038574,
+			377.46864795684814,
+			376.52305126190186
+        	],
+        	"Y_Nose": [
+			661.1293792724609,
+			654.8637390136719,
+			649.2276763916016,
+			648.3708953857422,
+			606.0959625244141,
+			620.4314422607422
+        	],
+	        "VideoMetadata": {
+	            "FrameHeight": 1280,
+	            "FrameWidth": 720
+	        }
+	    }
+	}
+	
+**Note:** 
+
+The `GET` API allows only a maximum of **5 retries**. If this limit is reached, an error response would be returned instead.
+
+.. code-block:: JSON
+	
+	{
+		"statusCode": 500,
+		"headers": {
+			"Content-Type": "application/json"
+		},
+		"body": "Number of maximum tries has been reached. Please try again later. Or contact the developer"
+	}
+
 Common error gateway response types
 -----------------------------------
 
