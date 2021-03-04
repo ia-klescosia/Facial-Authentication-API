@@ -8,8 +8,10 @@ How it works
 
 The application captures an image and encodes it to a ``Base64 encoded`` string, then calls the ``selfie match`` API which is powered by a Amazon's Facial-Recognition AI, it then validates image to the Government Issued ID.
 
-How to send requests via REST API
------------------------------------
+How to send POST requests via REST API
+---------------------------------------
+
+API: https://6sdo4wx835.execute-api.ap-southeast-1.amazonaws.com/dev/selfieapi
 
 The payload accepts an `application/json` type. 
 

@@ -104,12 +104,12 @@ This will allow the application to bypass the process of having to `POST` data a
 **Sample Response**
 
 .. code-block:: JSON
-	
+
 	{
-    "statusCode": 200,
-    "headers": {
-        "Content-Type": "application/json"
-    },
+		"statusCode": 200,
+		"headers": {
+			"Content-Type": "application/json"
+	},
 	"body": {
 		"uuid": "123ABAB",
 		"id_type": "postal identity card",

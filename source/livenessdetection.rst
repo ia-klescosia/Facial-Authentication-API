@@ -7,8 +7,10 @@ This section discusses the Liveness Detection API where a user uploads a video s
    :maxdepth: 2
    :caption: Contents:
 
-How to send requests via REST API
------------------------------------
+How to send POST requests via REST API
+---------------------------------------
+
+API: https://6sdo4wx835.execute-api.ap-southeast-1.amazonaws.com/dev/livenessdetection
 
 The payload accepts an `application/json` type. 
 
